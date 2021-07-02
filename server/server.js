@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static('build'));
 
 /** ---------- EXPRESS ROUTES ---------- **/
-const pizzaRouter = require('./routes/pizza.router.js');
+const bookRouter = require('./routes/book.router.js');
 app.use('/api/book', bookRouter);
 
 /** ---------- START SERVER ---------- **/
