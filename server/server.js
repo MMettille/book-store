@@ -9,8 +9,8 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static('build'));
 
 /** ---------- EXPRESS ROUTES ---------- **/
-const bookRouter = require('./routes/book.router.js');
-app.use('/api/book', bookRouter);
+const templateRouter = require('./routes/template.router.js');
+app.use('/api', templateRouter);
 
 /** ---------- START SERVER ---------- **/
 app.listen(port, function () {

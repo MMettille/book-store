@@ -5,22 +5,22 @@ import "./App.css";
 import { Route, HashRouter as Router } from "react-router-dom";
 
 // ⬇ Importing components
-import Header from '../Header/Header.jsx'
-import BookList from '../BookList/BookList.jsx'
+import About from '../About/About'
+import LandingPage from "../LandingPage/LandingPage.jsx";
 
 function App() {
-
   return (
     <Router>
-      <div className='App'>
-           
-        <Header />
-        
-        <Route path="/" exact>
-            <BookList />
-        </Route>
-            
-      </div>
+
+          <Route path="/" exact>
+            <LandingPage />
+          </Route>
+
+          <Route path="/about" >
+            <About />
+          </Route>
+
+
     </Router>
   );
 }
